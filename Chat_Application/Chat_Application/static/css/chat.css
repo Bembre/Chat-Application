@@ -1,0 +1,267 @@
+body {
+    background: radial-gradient(circle at 10% 20%, #dbeafe 0, #f8fafc 25%, #eef2ff 100%);
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+.bg-blob {
+    position: absolute;
+    filter: blur(60px);
+    opacity: 0.35;
+    z-index: 0;
+}
+.blob-1 { top: -120px; left: -80px; width: 320px; height: 320px; background: #a5b4fc; }
+.blob-2 { bottom: -140px; right: -120px; width: 380px; height: 380px; background: #22d3ee; }
+.glass {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0 1.25rem 2.75rem rgba(15, 23, 42, 0.12);
+    position: relative;
+    z-index: 1;
+}
+.chat-window {
+    height: 74vh;
+    border-radius: 22px;
+    overflow: hidden;
+}
+.messages {
+    height: calc(74vh - 160px);
+    overflow-y: auto;
+    padding: 1.25rem;
+    background: linear-gradient(180deg, #f8fafc 0%, #eef2f7 60%, #e2e8f0 100%);
+}
+.messages::-webkit-scrollbar { width: 8px; }
+.messages::-webkit-scrollbar-thumb { background: #a0aec0; border-radius: 12px; }
+.message-bubble {
+    max-width: 78%;
+    padding: 0.7rem 0.95rem;
+    border-radius: 16px;
+    margin-bottom: 0.95rem;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+}
+.message-in {
+    background: #e8f1ff;
+    align-self: flex-start;
+    border: 1px solid #d6e4ff;
+}
+.message-out {
+    background: #d8f7e7;
+    align-self: flex-end;
+    border: 1px solid #b7efcf;
+}
+.messages-inner { display: flex; flex-direction: column; }
+.time-badge { font-size: 0.75rem; color: #6c757d; }
+.contact-btn {
+    transition: all 0.18s ease;
+    border-left: 4px solid transparent;
+}
+.contact-btn:hover { transform: translateX(4px); background: #f1f5ff; }
+.contact-btn.active {
+    border-left: 4px solid #0d6efd;
+    background: #e9f2ff;
+    box-shadow: inset 0 0 0 1px #dbeafe;
+}
+.status-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #22c55e;
+    display: inline-block;
+    margin-right: 6px;
+}
+.avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6366f1, #22d3ee);
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.modal-glass {
+    background: rgba(255,255,255,0.93);
+    border: 1px solid rgba(255,255,255,0.7);
+    box-shadow: 0 20px 60px rgba(15,23,42,0.25);
+    border-radius: 18px;
+}
+.modal-hero {
+    background: linear-gradient(135deg, #6366f1, #22d3ee);
+    color: #fff;
+    border-radius: 14px;
+    padding: 14px 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+}
+.input-icon {
+    width: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #f1f5f9;
+    border: 1px solid #e2e8f0;
+    border-right: 0;
+    border-radius: 10px 0 0 10px;
+    color: #64748b;
+}
+.input-with-icon input {
+    border-radius: 0 10px 10px 0;
+}
+.modal-footer .btn {
+    border-radius: 10px;
+}
+.msg-actions {
+    display: flex;
+    gap: 6px;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+    font-size: 0.8rem;
+}
+.message-bubble:hover .msg-actions {
+    opacity: 1;
+}
+.msg-btn {
+    border: none;
+    background: transparent;
+    color: #6c757d;
+    padding: 0;
+    cursor: pointer;
+}
+.msg-btn:hover {
+    color: #0d6efd;
+}
+.reaction-picker {
+    display: flex;
+    gap: 6px;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+}
+.message-bubble:hover .reaction-picker {
+    opacity: 1;
+}
+.reaction-badge {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+}
+.list-title {
+    font-size: 0.8rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #6c757d;
+    padding: 0.75rem 1rem 0.25rem;
+}
+.btn-create-group {
+    border-style: dashed;
+}
+
+/* Attachment Styles */
+.attachment-preview {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+.attachment-preview img,
+.attachment-preview video {
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+.attachment-preview .attachment-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.attachment-preview .attachment-icon {
+    font-size: 1.5rem;
+}
+.attachment-preview .attachment-name {
+    flex: 1;
+    font-size: 0.9rem;
+    color: #374151;
+    word-break: break-word;
+}
+.attachment-preview .attachment-size {
+    font-size: 0.75rem;
+    color: #6c757d;
+}
+.attachment-preview .attachment-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+.attachment-preview .attachment-actions button {
+    padding: 0.25rem 0.75rem;
+    font-size: 0.875rem;
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.attachment-preview .attachment-actions button:hover {
+    background: #f3f4f6;
+    border-color: #d1d5db;
+}
+.attachment-preview .attachment-actions .btn-open {
+    color: #0d6efd;
+    border-color: #0d6efd;
+}
+.attachment-preview .attachment-actions .btn-open:hover {
+    background: #0d6efd;
+    color: white;
+}
+.attachment-preview .attachment-actions .btn-download {
+    color: #059669;
+    border-color: #059669;
+}
+.attachment-preview .attachment-actions .btn-download:hover {
+    background: #059669;
+    color: white;
+}
+.file-input-wrapper {
+    position: relative;
+    display: inline-block;
+}
+.file-input-wrapper input[type="file"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.attachment-thumbnail {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.attachment-container {
+    margin-top: 0.5rem;
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+}
+
+
+
+
