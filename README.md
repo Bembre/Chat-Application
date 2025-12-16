@@ -1,6 +1,4 @@
-# <h1 align="center">
-  📩 <img src="Chat_Application/Chat_Application/media/icon.png" height="22"> Connect
-</h1>
+# <img src="Chat_Application/Chat_Application/media/icon.png" height="22"> ## Connect
 
 
 ## 🚀 Project Overview
