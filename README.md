@@ -1,5 +1,5 @@
 # <h1 align="center">
-  📩 <img src="Chat_Application/Chat_Application/media/icon.png" height="32"> Connect
+  📩 <img src="Chat_Application/Chat_Application/media/icon.png" height="22"> Connect
 </h1>
 
 
