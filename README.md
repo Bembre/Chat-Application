@@ -2,9 +2,6 @@
   📩 <img src="Chat_Application/Chat_Application/media/icon.png" height="40" style="vertical-align: middle;"> Connect
 </h1>
 
-
-
-
 ## 🚀 Project Overview
 **Connect** is a **Full-Stack Chat Application** built using **Django**, **Django REST Framework (DRF)**, **JavaScript**, and modern frontend technologies (**HTML, CSS, and Bootstrap**).
 
