@@ -1,4 +1,4 @@
-# 📩 <img src="Chat_Application/Chat_Application/media/icon.png" width="60" align="middle" alt="Connect Icon"> Connect
+# 📩 <img src="Chat_Application/Chat_Application/media/icon.png" width="80" alt="Connect Icon"> Connect
 
 
 ## 🚀 Project Overview
