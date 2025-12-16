@@ -1,4 +1,4 @@
-# <img src="Chat_Application/Chat_Application/media/icon.png" height="22"> ## Connect
+# <img src="Chat_Application/Chat_Application/media/icon.png" height="26"> Connect
 
 
 ## 🚀 Project Overview
