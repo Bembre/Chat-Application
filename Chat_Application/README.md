@@ -1,4 +1,4 @@
-# 📩 ![Connect Icon](https://raw.githubusercontent.com/Bembre/Chat-Application/main/Chat_Application/Chat_Application/media/icon.png) Connect
+# 📩 ![Connect Icon](https://raw.githubusercontent.com/Bembre/Chat-Application/main/Chat_Application/Chat_Application/Chat_Application/media/icon.png) Connect
 
 ## 🚀 Project Overview
 **Connect** is a **Full-Stack Chat Application** built using **Django**, **Django REST Framework (DRF)**, **JavaScript**, and modern frontend technologies (**HTML, CSS, and Bootstrap**).
