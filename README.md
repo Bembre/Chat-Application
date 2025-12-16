@@ -1,4 +1,4 @@
-# 📩 <img src="Chat_Application/Chat_Application/media/icon.png" width="80" alt="Connect Icon"> Connect
+# 📩 ![Connect Icon](Chat_Application/Chat_Application/media/icon.png) Connect
 
 
 ## 🚀 Project Overview
